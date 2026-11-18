@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 170" role="img" aria-label="Maison Juusu">
+  <!-- Corps du bol -->
+  <path d="M20 60 C 22 112, 56 140, 100 140 C 144 140, 178 112, 180 60 A 80 18 0 0 1 20 60 Z" fill="#2F3D22"/>
+  <!-- Pied du bol -->
+  <rect x="78" y="136" width="44" height="12" rx="3" fill="#2F3D22"/>
+  <!-- Surface du matcha -->
+  <ellipse cx="100" cy="60" rx="80" ry="18" fill="#7A9A48" stroke="#2F3D22" stroke-width="4"/>
+  <!-- Tourbillon de mousse -->
+  <path d="M76 61 C 88 51, 118 52, 121 60 C 124 68, 97 70, 92 63 C 88 57, 104 56, 107 61" fill="none" stroke="#F4F1E6" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
