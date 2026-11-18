@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smoothie Fraise Banane</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="images/logo_bol.svg" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html"
+          ><img src="images/logo_bol.svg" alt="logo Maison Juusu" height="60"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="#matcha">Matcha</a></li>
+            <li><a href="#smoothies">Smoothies</a></li>
+            <li><a href="#jus">Jus</a></li>
+            <li><a href="#milkshakes">Milkshakes</a></li>
+            <li><a href="decouvertes.html">Découvertes</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="abonnement.html">S'abonner</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="Fraise Banane" class="bannerfraise">
+        <h1>
+          Smoothie <br />
+          Fraise Banane
+        </h1>
+        <p>
+          Un classique doux et fruité, prêt en 5 minutes. <br />Parfait au petit
+          déjeuner ou au goûter. <br /><strong
+            >2 verres · 5 min · Facile</strong
+          >
+        </p>
+      </section>
+      <div class="container">
+        <!-- Les 3 blocs -->
+        <section class="recette-blocs">
+          <div class="bloc">
+            <h2>Ustensiles</h2>
+            <p>Le matériel à préparer avant de commencer.</p>
+            <ul>
+              <li>Un blender (mixeur)</li>
+              <li>Un couteau</li>
+              <li>Une planche à découper</li>
+              <li>Un verre doseur</li>
+              <li>2 grands verres</li>
+            </ul>
+          </div>
+
+          <div class="bloc">
+            <h2>Ingrédients</h2>
+            <p>Pour 2 verres, des produits simples et frais.</p>
+            <ul>
+              <li>250 g de fraises</li>
+              <li>1 banane bien mûre</li>
+              <li>200 ml de lait (ou lait végétal)</li>
+              <li>1 yaourt nature</li>
+              <li>1 cuillère à soupe de miel</li>
+              <li>Quelques glaçons</li>
+            </ul>
+          </div>
+
+          <div class="bloc">
+            <h2>Étapes</h2>
+            <p>La recette pas à pas, en 5 minutes.</p>
+            <ol>
+              <li>Lavez les fraises et retirez les queues.</li>
+              <li>Épluchez la banane et coupez-la en rondelles.</li>
+              <li>
+                Mettez les fruits, le lait, le yaourt et le miel dans le
+                blender.
+              </li>
+              <li>Mixez environ 1 minute, jusqu'à obtenir un mélange lisse.</li>
+              <li>Ajoutez les glaçons, mixez quelques secondes et servez.</li>
+            </ol>
+          </div>
+        </section>
+      </div>
+      <div
+        id="carouselPeek"
+        class="carousel slide"
+        data-bs-ends="stop"
+        style="--bs-carousel-items-peek: 3rem; --bs-carousel-items-gap: 1rem"
+      >
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="mb-0">Les étapes en images</h5>
+          <div>
+            <button
+              class="btn-icon btn-sm"
+              type="button"
+              data-bs-target="#carouselPeek"
+              data-bs-slide="prev"
+              style="--bs-carousel-control-icon-width: 1rem"
+            >
+              <span class="carousel-icon-prev" aria-hidden="true"></span>
+              <span class="visually-hidden">Précédente</span>
+            </button>
+            <button
+              class="btn-icon btn-sm"
+              type="button"
+              data-bs-target="#carouselPeek"
+              data-bs-slide="next"
+              style="--bs-carousel-control-icon-width: 1rem"
+            >
+              <span class="carousel-icon-next" aria-hidden="true"></span>
+              <span class="visually-hidden">Suivante</span>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/fraise.png"
+              class="d-block w-100 rounded-5"
+              alt="Découpage de la queue des fraises."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/banane.png"
+              class="d-block w-100 rounded-5"
+              alt="Découpage des bananes en rondelle."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/blender.png"
+              class="d-block w-100 rounded-5"
+              alt="Mixez l'ensemble des ingrédients"
+            />
+          </div>
+        </div>
+      </div>
+      <section>
+        <div>
+          <section class="espace-avis">
+            <h2>Donnez votre avis</h2>
+
+            <form id="formAvis">
+              <label for="note">Notez cette recette :</label>
+
+              <select id="note" name="note" required>
+                <option value="">Choisir une note</option>
+                <option value="5">★★★★★ - Excellent</option>
+                <option value="4">★★★★☆ - Très bien</option>
+                <option value="3">★★★☆☆ - Bien</option>
+                <option value="2">★★☆☆☆ - Moyen</option>
+                <option value="1">★☆☆☆☆ - À améliorer</option>
+              </select>
+
+              <label for="commentaire">Votre commentaire :</label>
+
+              <textarea
+                id="commentaire"
+                name="commentaire"
+                rows="4"
+                placeholder="Donnez votre avis sur cette recette..."
+                required
+              ></textarea>
+
+              <button type="submit">Publier mon avis</button>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer>
+    <small>&copy;2026 Maison Juusu - Tous droits réservés</small>
+    <ul>
+      <li><a href="nous.html">L'équipe Maison Juusu</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </footer>
+</html>
